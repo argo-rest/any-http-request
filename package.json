@@ -37,6 +37,9 @@
     "format": "es6",
     "directories": {
       "lib": "src"
+    },
+    "dependencies": {
+      "request": "npm:request@^2.61.0"
     }
   }
 }
