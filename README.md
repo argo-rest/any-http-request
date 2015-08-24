@@ -10,7 +10,7 @@ with [jspm](https://jspm.io) and loaded via
 [SystemJS](https://github.com/systemjs/systemjs) as follows:
 
 ``` javascript
-import {Http} from 'github:argo-rest/any-http-request;
+import {Http} from 'github:argo-rest/any-http-request';
 
 var httpClient = new Http;
 httpClient.
