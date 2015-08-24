@@ -1,0 +1,42 @@
+{
+  "name": "any-http-request",
+  "version": "0.1.0",
+  "description": "AnyHTTP adapter for the Node request library",
+  "homepage": "https://github.com/argo-rest/any-http-request",
+  "main": "src/any-http-request.js",
+  "devDependencies": {
+    "jspm": "^0.10.6",
+    "karma": "^0.12.24",
+    "karma-chai": "^0.1.0",
+    "karma-chai-plugins": "^0.2.3",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-jspm": "^1.0.1",
+    "karma-mocha": "^0.1.9",
+    "karma-sinon": "^1.0.3",
+    "karma-sinon-chai": "^0.2.0",
+    "sinon": "^1.11.1"
+  },
+  "scripts": {
+    "test": "node_modules/karma/bin/karma start test/karma.conf.js",
+    "test-setup": "node_modules/.bin/jspm install"
+  },
+  "keywords": [
+    "anyhttp",
+    "http",
+    "request",
+    "node"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/argo-rest/any-http-request.git"
+  },
+  "author": "Sébastien Cevey <seb@cine7.net>",
+  "license": "Apache-2",
+  "jspm": {
+    "registry": "jspm",
+    "format": "es6",
+    "directories": {
+      "lib": "src"
+    }
+  }
+}
