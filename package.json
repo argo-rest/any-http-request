@@ -1,6 +1,6 @@
 {
   "name": "any-http-request",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "AnyHTTP adapter for the Node request library",
   "homepage": "https://github.com/argo-rest/any-http-request",
   "main": "src/any-http-request.js",
