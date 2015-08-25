@@ -7,6 +7,7 @@ System.config({
   },
 
   map: {
+    "form-data": "npm:form-data@1.0.0-rc3",
     "request": "npm:request@2.61.0",
     "traceur": "github:jmcriffey/bower-traceur@0.0.91",
     "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.91",
