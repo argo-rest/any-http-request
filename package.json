@@ -40,6 +40,15 @@
     },
     "dependencies": {
       "request": "npm:request@^2.61.0"
+    },
+    "devDependencies": {
+      "traceur": "github:jmcriffey/bower-traceur@0.0.91",
+      "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.91"
+    },
+    "overrides": {
+      "npm:form-data@1.0.0-rc3": {
+        "browser": "lib/form_data"
+      }
     }
   }
 }
