@@ -34,7 +34,7 @@ function makeRequest(method, uri, data, options) {
         // contentType: getHeader('content-type'),
         // location:    getHeader('location'),
         body:        responseBody,
-        headers:     Object.mixin(response.headers, {
+        headers:     Object.assign(response.headers, {
           'Content-Type': response.headers['content-type'],
           'Location':     response.headers['location']
         })
@@ -64,27 +64,27 @@ export class Http {
   }
 
   get (uri, params, options = {}) {
-    const opts = Object.mixin({}, this.baseOptions, options);
+    const opts = Object.assign({}, this.baseOptions, options);
     return makeRequest('GET', uri, params, opts);
   }
 
   post (uri, data, options) {
-    const opts = Object.mixin({}, this.baseOptions, options);
+    const opts = Object.assign({}, this.baseOptions, options);
     return makeRequest('POST', uri, data, opts);
   }
 
   put (uri, data, options) {
-    const opts = Object.mixin({}, this.baseOptions, options);
+    const opts = Object.assign({}, this.baseOptions, options);
     return makeRequest('PUT', uri, data, opts);
   }
 
   patch (uri, data, options) {
-    const opts = Object.mixin({}, this.baseOptions, options);
+    const opts = Object.assign({}, this.baseOptions, options);
     return makeRequest('PATCH', uri, data, opts);
   }
 
   delete (uri, options) {
-    const opts = Object.mixin({}, this.baseOptions, options);
+    const opts = Object.assign({}, this.baseOptions, options);
     return makeRequest('DELETE', uri, null, opts);
   }
 }
